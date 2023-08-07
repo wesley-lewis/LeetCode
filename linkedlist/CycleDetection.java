@@ -13,7 +13,7 @@ public class CycleDetection {
   public boolean detectCycle(ListNode head) {
     ListNode fast, slow;
     slow = head;
-    fast = head;
+    fast = head.next;
 
     while (slow != null && fast != null && fast != slow) {
       slow = slow.next;
